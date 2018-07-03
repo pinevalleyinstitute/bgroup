@@ -1,7 +1,5 @@
 package za.co.ticketreservation.tickets;
 
-package za.co.ticketreservation.tickets
-
 import java.util.Date;
 
 public class Ticket{
