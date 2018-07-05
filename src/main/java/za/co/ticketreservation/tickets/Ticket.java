@@ -9,11 +9,6 @@ public class Ticket{
     private String validity;
     private String nameOfIssuer;
 
-    Booking booking;
-
-public static void main(String[] args) {
-    
-}
 
     public String getIssueDate() {
         return issueDate;
@@ -48,8 +43,8 @@ public static void main(String[] args) {
     this.nameOfIssuer = nameOfIssuer;
     }
 
-//a method to print a ticket
-    System.out.println("");
+
+    
 //ticket confirmation
     void confirmTicket(){
         return;
