@@ -43,8 +43,6 @@ public class UserLogin {
 
 	}
 
-	}
-
 	public void logOut() {
 		return;
 	}

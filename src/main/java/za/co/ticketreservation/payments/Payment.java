@@ -8,8 +8,19 @@ public class Payment {
     private double amount;
     private Date date;
     private String status;
-    
-//Getters and setters
+
+    // creat a constructor
+
+    public Payment( String methodOfPayment,double amount,Date date,String status,){
+
+    this.methodaoafPayment = methodOfPayment;
+    this.amount = amount;
+    this. date = date;
+    this. status = status;
+
+    }
+
+    // Getters and setters
     public String getmethodOfPayment() {
         return methodOfPayment;
     }
@@ -22,16 +33,16 @@ public class Payment {
         return amount;
     }
 
-    public setamount(double amount){
-    this.amount= amount;
+    public void setamount(double amount) {
+        this.amount = amount;
     }
 
     public getDate() {
     return date;
     }
 
-    public setDate(String date){
-    this.date = date;
+    public void setDate(String date) {
+        this.date = date;
     }
 
     public string getStatus() {
@@ -42,26 +53,19 @@ public class Payment {
         this.status = status;
     }
 
-}
+    // payment will have the following functionalities
 
-//payment will have the following functionalities
+    public void confirmPayment() {
+        return;
+    }
 
+    // use conditional statement
+    public void declinePaymet() {
+        return;
+    }
 
-public void confirmPayment() {
-    return;
-}
-
-public void declinePaymet() {
-    //use conditional statement
-    return;
-}
-
-
-public void refund() {
-
-    //check using conditional statements
-    return;
-}
-
+    public void refund() {
+        return;
+    }
 
 }

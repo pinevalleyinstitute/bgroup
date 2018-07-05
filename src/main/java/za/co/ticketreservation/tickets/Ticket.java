@@ -57,7 +57,7 @@ public class Ticket{
     void sendEmail(){
         return;
     }
-//meams of cacelling a ticket
+//means of cacelling a ticket
     void cancelTicket(){
         return;
     }

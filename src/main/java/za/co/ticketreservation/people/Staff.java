@@ -2,7 +2,7 @@ package za.co.ticketreservation.people;
 
 public class Staff extends Person {
 // create a constuctor
-    public Staff(String surname,String firstName,int idNumber,String address;int cellNumber);
+    public Staff(String surname,String firstName,int idNumber,String address,int cellNumber){
 
     this.surname = surname;
     this.firstName = firstName;
@@ -10,7 +10,7 @@ public class Staff extends Person {
     this.address = address;
     this.cellNumber = cellNumber;
 
-    
+    }
 
     public void createProfile() {
         return;
