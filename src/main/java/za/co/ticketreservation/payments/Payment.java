@@ -11,7 +11,7 @@ public class Payment {
 
     // creat a constructor
 
-    public Payment( String methodOfPayment,double amount,Date date,String status,){
+    public Payment( String methodOfPayment,double amount,Date date,String status){
 
     this.methodaoafPayment = methodOfPayment;
     this.amount = amount;
