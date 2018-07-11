@@ -7,6 +7,7 @@ public class Person {
     private int idNumber;
     private String address;
     private int cellNumber;
+    private int age;
 
     public String getSurname() {
         return surname;
@@ -46,6 +47,13 @@ public class Person {
 
     public setCellNo(String cellNo){
         this.cellNo = cellNo; 
+    }
+
+    public void setAge(int age){
+        this.age = age;
+    }
+    public int getAge(){
+        return this.age;
     }
 
 }
