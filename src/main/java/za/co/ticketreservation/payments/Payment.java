@@ -29,7 +29,7 @@ public class Payment {
         this.methodOfPayment = methodOfPayment;
     }
 
-    public double getamount() {
+    public String getamount() {
         return amount;
     }
 
@@ -45,7 +45,7 @@ public class Payment {
         this.date = date;
     }
 
-    public String getStatus() {
+    public string getStatus() {
         return status;
     }
 

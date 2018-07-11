@@ -1,6 +1,6 @@
 package za.co.ticketreservation.people;
 
-public class Customer extends Person {
+public class Custumer extends Person {
 
 
 

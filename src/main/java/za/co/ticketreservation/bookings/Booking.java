@@ -1,8 +1,6 @@
 package za.co.ticketreservation.bookings;
 
 import java.util.Date;
-import za.co.ticketreservation.payments.Payment;
-import za.co.ticketreservation.people.Customer;
 
 public class Booking {
 
@@ -19,8 +17,7 @@ public class Booking {
     private String direction;
     private String category;
     private String penalty;
-    private String status;
-    private Payment payment;
+    private String Payment payment;
 
     // getters and setters
 
@@ -123,14 +120,6 @@ public class Booking {
     // getters and setters created that decribes the relationship Booking has a
     // Ticket
 
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public String getStatus() {
-        return this.status;
-    }
-
     public String getPayment() {
         return this.Payment;
     }
@@ -140,43 +129,34 @@ public class Booking {
     }
     // Now to create an overloaded constructor
 
-    Booking(String referenceNumber, Date startDate, Date endDate, double price, String insurance, String exemption,
-            String bookingType, int numberOfPerson, double discount, String penalty, String direction, String category,
-            Payment payment) {
+Booking(String referenceNumber,Date startDate,Date endDate,double price,String insurance,String exemption,String bookingType,int numberOfPerson,double discount,String  penalty,String direction,String category,String Payment payment );
 
-        this.referenceNumber = referenceNumber;
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.price = price;
-        this.insurance = insurance;
-        this.exemption = exemption;
-        this.bookingType = bookingType;
-        this.numberOfPerson = numberOfPerson;
-        this.discount = discount;
-        this.penalty = penalty;
-        this.direction = direction;
-        this.category = category;
-        this.payment = payment;
+    this.referenceNumber = referenceNumber;
+    this.startDate = startDate;
+    this.endDate = endDate;
+    this.price = price;
+    this.insurance = insurance;
+    this.exemption = exemption;
+    this.bookingType = bookingType;
+    this.numberOfPerson = numberOfPerson;
+    this.discount = discount;
+    this. penalty = penalty;
+    this. direction = direction;
+    this.category = category;
+    this.payment = payment;
 
-    }
 
-    // the booking object will have the following behavior
+
+
+//the booking object will have the following behavior
 
     public void refund() {
-        if (payment.getStatus() == "PAYMENT_CONFIRMED") {
-            this.price = payment.getamount() - (payment.getamount() * 0.20);
-            payment.setStatus("PAYMENT_REFUNDED");
-            this.status = "BOOKING_CANCELLED";
-        }
-        // check using conditional statements
+
+        //check using conditional statements
         return;
     }
 
     public void confirmBooking() {
-        if (payment.getStatus() == "PAYMENT_CONFIRMED") {
-            status = "CONFIRMED";
-        }
-
         return;
     }
 
@@ -184,31 +164,23 @@ public class Booking {
         return;
     }
 
-    public void discount(Customer customer) {
-        // use condtions
-        if(customer.getAge() > 65){
-            this.price = this.price - (this.price * 0.12);
-        }else if(payment.getmethodOfPayment() == "CASH"){
-            this.price = this.price - (this.price * 0.20);
-        }
+    public void discount() {
+        //use condtions
         return;
     }
 
     public void penalty() {
-        // use conditions
+        //use conditions
         return;
     }
 
     public void cancelBoking() {
-        // use conditions
-
-        status = "CANCELLED";
+       // use conditions
         return;
     }
 
     public void createBooking() {
         // use conditions and Scanner
-
         return;
     }
 
